@@ -1,4 +1,5 @@
 <div align="center">
+  <img alt="Graph visualization banner" src="public/og.svg" />
 	<h1>Graph Visualization</h1>
 	<img alt="Node.js" src="https://img.shields.io/badge/Node.js_v22.14.0-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
 	<img alt="Next.js" src="https://img.shields.io/badge/Next.js_v15.5.18-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
@@ -9,8 +10,6 @@
 
   <p>Web-based graph visualization and editing tool. Build nodes and edges in seconds, then explore structure with smooth zoom and pan.</p>
 </div>
-
-<img alt="Graph visualization banner" src="public/og.svg" />
 
 ## Features
 
