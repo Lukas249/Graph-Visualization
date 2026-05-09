@@ -35,6 +35,26 @@ export default function GuideContent() {
 
       <ArticleParagraph>
         <p>
+          <strong>Edge Support</strong>
+        </p>
+        <ul className="list-disc pl-4">
+          <li>Directed and undirected graphs are supported.</li>
+          <li>Self-loops are allowed.</li>
+          <li>Between two nodes, you can have only one undirected edge.</li>
+          <li>
+            Between two nodes, you can have up to two directed edges (A -&gt; B
+            and B -&gt; A).
+          </li>
+          <li>Parallel edges in the same direction are not allowed.</li>
+          <li>
+            You cannot mix a directed edge and an undirected edge between the
+            same two nodes.
+          </li>
+        </ul>
+      </ArticleParagraph>
+
+      <ArticleParagraph>
+        <p>
           <strong>Interactive View</strong>
         </p>
         Zoom and move using your mouse or touch. Zoom in to see nodes in detail
