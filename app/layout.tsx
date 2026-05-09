@@ -58,11 +58,17 @@ export const metadata: Metadata = {
   },
   applicationName: "Graphly",
   category: "technology",
-  keywords: ["graph visualization", "interactive graph", "graph editor", "graph visualization tool"], 
+  keywords: [
+    "graph visualization",
+    "interactive graph",
+    "graph editor",
+    "graph visualization tool",
+  ],
 };
 
 export const viewport: Viewport = {
-  width: "1024",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
