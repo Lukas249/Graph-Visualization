@@ -125,7 +125,7 @@ export default function VisualizePage() {
               href="https://github.com/Lukas249/Graph-Visualization"
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full border border-gray-700 bg-gray-900 px-4 py-2 text-sm font-semibold leading-none text-gray-100 transition hover:border-gray-500 hover:bg-gray-800"
+              className="group inline-flex items-center gap-2 rounded-full border border-gray-700 bg-gray-900 px-4 py-2 text-sm leading-none font-semibold text-gray-100 transition hover:border-gray-500 hover:bg-gray-800"
             >
               <svg
                 aria-hidden="true"
