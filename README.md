@@ -10,6 +10,8 @@
   <p>Web-based graph visualization and editing tool. Build nodes and edges in seconds, then explore structure with smooth zoom and pan.</p>
 </div>
 
+<img alt="Graph visualization banner" src="public/og.svg" />
+
 ## Features
 
 - Interactive graph visualization

@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0b0f14" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(920 110) rotate(135) scale(220 220)">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="920" cy="110" r="220" fill="url(#glow)" />
+
+  <g opacity="0.25" stroke="#60a5fa" stroke-width="2">
+    <path d="M120 420C260 320 420 340 560 260C700 180 820 160 980 210" />
+    <path d="M160 470C320 410 480 430 620 360C760 290 900 280 1060 320" />
+  </g>
+
+  <g fill="#e5e7eb">
+    <circle cx="180" cy="420" r="8" />
+    <circle cx="320" cy="360" r="8" />
+    <circle cx="480" cy="390" r="8" />
+    <circle cx="640" cy="310" r="8" />
+    <circle cx="820" cy="260" r="8" />
+    <circle cx="980" cy="290" r="8" />
+  </g>
+
+  <text x="80" y="190" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="56" font-weight="700" letter-spacing="0.2">
+    Graph Visualization Tool
+  </text>
+  <text x="80" y="250" fill="#cbd5f5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">
+    Graph visualization tool to create and edit nodes and edges. Explore relationships
+  </text>
+  <text x="80" y="282" fill="#cbd5f5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="400">
+    with zoom and pan directly in your browser.
+  </text>
+
+</svg>

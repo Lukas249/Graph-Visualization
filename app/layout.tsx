@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
   description:
     "Graph visualization tool to create and edit nodes and edges. Explore relationships with zoom and pan directly in your browser.",
+  metadataBase: new URL("https://graph-visualization-ten.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -27,13 +28,22 @@ export const metadata: Metadata = {
     url: "/",
     siteName: "Graphly",
     type: "website",
+    images: [
+      {
+        url: "/og.svg",
+        width: 1200,
+        height: 630,
+        alt: "Graph Visualization Tool",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title:
       "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
     description:
       "Graph visualization tool to create and edit nodes and edges. Explore relationships with zoom and pan directly in your browser.",
+    images: ["/og.svg"],
   },
   icons: {
     icon: "/favicon.svg",
@@ -41,9 +51,14 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
   applicationName: "Graphly",
   category: "technology",
+  keywords: ["graph visualization", "interactive graph", "graph editor", "graph visualization tool"], 
 };
 
 export const viewport: Viewport = {
