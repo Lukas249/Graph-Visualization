@@ -1,0 +1,18 @@
+services:
+  graph-visualizations-web:
+    command: npm run dev
+    environment:
+      - WATCHPACK_POLLING=true
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /usr/local/app
+          ignore:
+            - node_modules/
+            - .next/
+            - coverage/
+            - .git/
+            - certificates/
+        - action: rebuild
+          path: package.json

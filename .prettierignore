@@ -1,0 +1,9 @@
+# Build output
+.next/
+
+# Node modules
+node_modules/
+
+# Config files that don't need formatting
+.gitignore
+.prettierignore

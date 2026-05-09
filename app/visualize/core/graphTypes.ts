@@ -1,0 +1,85 @@
+import { SimulationLinkDatum, SimulationNodeDatum } from "d3";
+
+export type SimulationNode = Node & SimulationNodeDatum;
+export type SimulationEdge = Edge & SimulationLinkDatum<SimulationNode>;
+
+export type MarkDirectedEdgeProps = {
+  sourceId: string;
+  destinationId: string;
+  edgeColor?: string;
+  edgeLabelColor?: string;
+  edgeHeadColor?: string;
+  prevEdgeColor?: string;
+  prevEdgeLabelColor?: string;
+  prevEdgeHeadColor?: string;
+};
+
+export type MarkEdgeProps = MarkDirectedEdgeProps & { directed?: boolean };
+
+export type MarkNodeProps = {
+  nodeId: string;
+  nodeColor?: string;
+  strokeColor?: string;
+  nodeLabelColor?: string;
+  prevNodeColor?: string;
+  prevStrokeColor?: string;
+  prevNodeLabelColor?: string;
+};
+
+export type NodeMarkings = {
+  fill: string;
+  stroke: string;
+  label: string;
+};
+
+export type EdgeMarkings = {
+  fill: string;
+  head: string;
+  label: string;
+};
+
+export type Markings = {
+  nodes: { [key: string]: NodeMarkings };
+  edges: {
+    [key: string]: {
+      [key: string]: EdgeMarkings;
+    };
+  };
+};
+
+export interface GraphHandle {
+  markNode: ({
+    nodeId,
+    nodeColor,
+    strokeColor,
+    nodeLabelColor,
+  }: MarkNodeProps) => void;
+  markEdge: ({
+    sourceId,
+    destinationId,
+    directed,
+    edgeColor,
+    edgeLabelColor,
+    edgeHeadColor,
+  }: MarkEdgeProps) => void;
+  resetMarks: () => void;
+  transpose: () => void;
+  getMarkings: () => Markings;
+  setMarkings: (markings: Markings) => void;
+  getDefaultMarkings: () => Markings;
+  getSelectedNode: () => string | null;
+  selectNode: (nodeId: string) => void;
+  toggleNodeSelection: (enabled: boolean) => void;
+  getNodeMarkings: (nodeId: string) => NodeMarkings | undefined;
+}
+
+export interface Node {
+  id: string;
+}
+
+export interface Edge {
+  source: Node;
+  target: Node;
+  directed?: boolean;
+  weight?: string;
+}

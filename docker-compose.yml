@@ -1,0 +1,7 @@
+services:
+  graph-visualizations-web:
+    image: graph-visualizations:latest
+    container_name: graph-visualizations
+    build: .
+    ports:
+      - "3000:3000"

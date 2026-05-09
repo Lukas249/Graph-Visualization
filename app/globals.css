@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  prefix: "daisyui-";
+}
+
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-primary: #60a5fa;
+  --color-gray-dark: #1e1e1e;
+  --color-gray-dark-850: #252526;
+  --color-dark: #0a0a0a;
+  --color-gray: #6a7282;
+
+  --toastify-color-progress-light: var(--color-primary);
+  --toastify-color-progress-dark: var(--color-primary);
+}
+
+@theme {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-primary: #60a5fa;
+  --color-gray-dark: #1e1e1e;
+  --color-gray-dark-850: #252526;
+  --color-dark: #0a0a0a;
+  --color-gray: #6a7282;
+  --container-8xl: 88rem;
+  --container-9xl: 96rem;
+  --container-menu: var(--container-9xl);
+  --container-layout: var(--container-8xl);
+  --container-article: var(--container-6xl);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-bg {
+  background: #0a0a0a;
+  background: linear-gradient(
+    130deg,
+    rgba(10, 10, 10, 1) 40%,
+    rgba(96, 165, 250, 1) 100%
+  );
+}
+
+.loader {
+  display: inline-block;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  left: 34px;
+  bottom: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-bottom-color: var(--color-primary);
+  box-sizing: border-box;
+  animation: rotation 0.6s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
