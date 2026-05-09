@@ -20,7 +20,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
+    title:
+      "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
     description:
       "Graph visualization tool to create and edit nodes and edges. Explore relationships with zoom and pan directly in your browser.",
     url: "/",
@@ -29,7 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
+    title:
+      "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
     description:
       "Graph visualization tool to create and edit nodes and edges. Explore relationships with zoom and pan directly in your browser.",
   },

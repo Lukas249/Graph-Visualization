@@ -16,34 +16,46 @@ function DescriptionContent() {
   return (
     <section className="max-w-layout mx-auto px-8">
       <p className="mt-4 text-base leading-7 text-gray-200">
-        Graph visualization helps you understand connected data by turning
-        nodes and edges into a clear, interactive map. With Graphly, you can
-        build a graph in seconds, rearrange relationships, and explore
-        structure through smooth zoom and pan. This makes it easier to spot
-        clusters, pathways, and patterns that are hidden in raw lists or
-        tables.
+        Graph visualization helps you understand connected data by turning nodes
+        and edges into a clear, interactive map. With Graphly, you can build a
+        graph in seconds, rearrange relationships, and explore structure through
+        smooth zoom and pan. This makes it easier to spot clusters, pathways,
+        and patterns that are hidden in raw lists or tables.
       </p>
       <p className="mt-4 text-base leading-7 text-gray-200">
         The online graph editor lets you create directed and undirected edges,
-        add weights, and update node relationships in real time. Whether you
-        are learning graph theory, prototyping an algorithm, or preparing a
-        visual explanation for a report, the editor keeps the focus on the
-        structure of your graph. You can adjust nodes, refine edges, and see
-        how the layout responds instantly.
+        add weights, and update node relationships in real time. Whether you are
+        learning graph theory, prototyping an algorithm, or preparing a visual
+        explanation for a report, the editor keeps the focus on the structure of
+        your graph. You can adjust nodes, refine edges, and see how the layout
+        responds instantly.
       </p>
       <p className="mt-4 text-base leading-7 text-gray-200">
-        Start by adding a few nodes and edges. The interactive
-        view is built for experimentation, so you can move between editing
-        and exploration without leaving the page. If you are looking for a
-        fast way to create graph visualizations online, Graphly gives you a
-        clean workspace.
+        Start by adding a few nodes and edges. The interactive view is built for
+        experimentation, so you can move between editing and exploration without
+        leaving the page. If you are looking for a fast way to create graph
+        visualizations online, Graphly gives you a clean workspace.
       </p>
     </section>
-  )
+  );
 }
 
-const graphNodes = [{"id": "1"}, {"id": "2"}, {"id": "3"}, {"id": "4"}, {"id": "5"}, {"id": "6"}]
-const graphEdges = [{"source": {"id": "2"}, "target": {"id": "1"}}, {"source": {"id": "1"}, "target": {"id": "3"}}, {"source": {"id": "2"}, "target": {"id": "4"}}, {"source": {"id": "3"}, "target": {"id": "5"}}, {"source": {"id": "5"}, "target": {"id": "6"}}, {"source": {"id": "2"}, "target": {"id": "5"}}]
+const graphNodes = [
+  { id: "1" },
+  { id: "2" },
+  { id: "3" },
+  { id: "4" },
+  { id: "5" },
+  { id: "6" },
+];
+const graphEdges = [
+  { source: { id: "2" }, target: { id: "1" } },
+  { source: { id: "1" }, target: { id: "3" } },
+  { source: { id: "2" }, target: { id: "4" } },
+  { source: { id: "3" }, target: { id: "5" } },
+  { source: { id: "5" }, target: { id: "6" } },
+  { source: { id: "2" }, target: { id: "5" } },
+];
 
 export default function VisualizePage() {
   const graphAppJsonLd = {
@@ -72,14 +84,8 @@ export default function VisualizePage() {
   const tutorialTabsRef = useRef<TabsRef>(null);
 
   const [tutorialTabs] = useState<Tab[]>([
-    createStaticTab(
-      TabTitle.Description,
-      <DescriptionContent/>,
-    ),
-    createStaticTab(
-      TabTitle.Guide,
-      <GuideContent/>,
-    ),
+    createStaticTab(TabTitle.Description, <DescriptionContent />),
+    createStaticTab(TabTitle.Guide, <GuideContent />),
     createRenderTab(TabTitle.Graph, () => (
       <GraphEditor
         userNodes={nodes}
