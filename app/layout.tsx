@@ -13,18 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
+  title: "Graph Visualization - Online Graph Editor",
   description:
-    "Graph visualization tool to create and edit nodes and edges. Explore relationships with zoom and pan directly in your browser.",
+    "Visualize nodes and edges instantly with this online text-to-graph editor. Map relationships with a simple interface featuring fluid zoom and pan navigation. Try it online for free.",
   metadataBase: new URL("https://graph-visualization-ten.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title:
-      "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
+    title: "Graph Visualization - Online Graph Editor",
     description:
-      "Graph visualization tool to create and edit nodes and edges. Explore relationships with zoom and pan directly in your browser.",
+      "Visualize nodes and edges instantly with this online text-to-graph editor. Map relationships with a simple interface featuring fluid zoom and pan navigation. Try it online for free.",
     url: "/",
     siteName: "Graphly",
     type: "website",
@@ -39,10 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Graph Visualization Tool - Build, Edit, and Explore Graphs | Graphly",
+    title: "Graph Visualization - Online Graph Editor",
     description:
-      "Graph visualization tool to create and edit nodes and edges. Explore relationships with zoom and pan directly in your browser.",
+      "Visualize nodes and edges instantly with this online text-to-graph editor. Map relationships with a simple interface featuring fluid zoom and pan navigation. Try it online for free.",
     images: ["/og.svg"],
   },
   icons: {
@@ -63,6 +61,10 @@ export const metadata: Metadata = {
     "interactive graph",
     "graph editor",
     "graph visualization tool",
+    "graph visualization online",
+    "graph editor online",
+    "drag-and-drop graph",
+    "zoomable graph",
   ],
 };
 
